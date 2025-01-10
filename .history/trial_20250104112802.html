@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>.main-slider-container {
+        max-width: 1230px;
+        max-height: 700px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        margin-top: 6%;
+      }
+      
+      .main-slider-wrapper {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+      
+      .main-slider-box {
+        /flex: 0 0 33.333%;/
+        flex: 33.333%;
+        padding: 55px;
+        padding-top: 110px;
+        padding-bottom: 80px;
+        box-sizing: border-box;
+        text-align: center;
+        color: white;
+        position: relative;
+      }
+      
+      .blue-bg {
+        background-color: #004f98;
+      }
+      
+      .green-bg {
+        background-color: #28a745;
+      }
+      
+      /* Inner Slider */
+      .inner-slider-container {
+        position: relative;
+        margin-top: 10px;
+        overflow: hidden;
+        height: 160%;
+      }
+      
+      .inner-slider-wrapper {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+      
+      .inner-slide {
+        flex: 0 0 100%;
+        text-align: center;
+      }
+      
+      .inner-slide img {
+        max-width: 130px;
+        margin-bottom: 10px;
+        margin-left: -30%;
+      }
+      
+      .inner-controls {
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 100px;
+      }
+      
+      .inner-arrow {
+        max-width: 100px;
+        color: white;
+        border: none;
+        box-shadow: none; /* Removes any shadow */
+        outline: none; /* Removes focus outline if present */
+        padding: 3px 5px;
+        font-size: 28px;
+        cursor: pointer;
+        background-color: transparent;
+        margin-top: -290%;
+      }
+      
+      .inner-dots {
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+      
+        margin-top: 55px;
+      }
+      
+      .inner-dots div {
+        width: 4px;
+        height: 4px;
+        background-color: lightgray;
+        border-radius: 20%;
+        cursor: pointer;
+      }
+      
+      .inner-dots .active {
+        background-color: white;
+      }
+      
+      /* Main Slider Controls */
+      .main-controls {
+        position: relative;
+        text-align: center;
+        margin-top: 10px;
+      }
+      
+      .main-arrow {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+      
+      .main-arrow:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      .horizontal-line {
+        height: 1px; /* Thin line */
+        width: 200px; /* Line length */
+        background-color: white; /* Line color */
+        margin: 0 0; /* Same spacing as vertical line */
+        transform: scaleY(0.3); /* Thin appearance similar to vertical */
+      }</style>
+</head>
+<body>
+    <!-- Main Slider -->
+  <div class="main-slider-container">
+    <div class="main-slider-wrapper">
+      <!-- Box 1 -->
+      <div style="width: 33%;" class="main-slider-box blue-bg">
+        <h5 style="letter-spacing: 4px;font-size: xx-small;font-weight: 800;margin-top: -23%;margin-left: -55%;">SMART MONITORING</h5>
+        <p style="font-size: 23px;margin-top: 2%;margin-left: -19px;text-align: left;font-weight: 800;line-height: 1;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;letter-spacing: 1px;">
+          ENERGY AND POWER<br> MONITORS 
+        </p>
+
+        <!-- Inner Slider -->
+        <div class="inner-slider-container">
+          <div class="inner-slider-wrapper">
+            <!-- Inner Slide 1 -->
+            <div class="inner-slide">
+              <img style="margin-left: -196px;margin-top: 29%;height: 59%;width: 45%;" src="images/img1.webp" alt="Branch Circuit Monitors">
+              <h5 style="margin-left: 34%; margin-top: -49%;font-size: 15.8px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">DC Energy Meters</h5>
+              <div style="margin-left: 45%; margin-top: 3%; width: 52%;" class="horizontal-line"></div>
+              <img style="height:20px; margin-left: 45%; margin-top: 10%; display: flex; text-align: left;" src="images/is box1 img1.svg" alt="">
+              <h3 style="margin-left: -3.6%;font-size: 0.8rem;margin-top: -3%;">DC</h3>
+              <h6 style="font-size: 0.7rem;font-weight: lighter;margin-left: 15.2%;">Measurements</h6>
+              <img style="height:20px; margin-left: 72%; margin-top: -24%; display: flex; text-align: right;" src="images/is box1 img2.svg" alt="">
+              <h3 style="margin-left: 72.9%;font-size: 0.71rem;margin-top: -3%;text-align: left;">
+                BI- DIRECTIONAL
+              </h3>
+              <h6 style="font-size: 0.7rem;font-weight: lighter;margin-left: 73%;text-align: left;line-height: 1.2;">
+                Power Monitoring
+              </h6>
+            </div>
+
+            <!-- Inner Slide 2 -->
+            <div class="inner-slide">
+              <img style="margin-left: -190px;margin-top: 25%;" src="images/ws2.webp" alt="DC Energy Meters">
+              <h5 style="margin-left: 46%; margin-top: -50%;font-size: 15.8px;line-height: 1.2; text-align: left;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                Branch Circuit Power Monitors
+              </h5>
+              <div style="margin-left: 46%; margin-top: 3%; width: 52%" class="horizontal-line"></div>
+              <img style="height:20px; margin-left: 47%; margin-top: 5%; display: flex; text-align: left;" src="images/is box2 img1.svg" alt="">
+              <h3 style="margin-left: 21%;font-size: 0.72rem;margin-top: -2%;">SPACE SAVING</h3>
+              <h6 style="font-size: 0.69rem;font-weight: lighter;margin-left: 46.9%;text-align: left;line-height: 1.2;">
+                Extremely slim <br> design
+              </h6>
+              <img style="width:60px; margin-left: 77.8%; margin-top: -20.2%; display: flex; text-align: right;" src="images/is box2 img2.svg" alt="">
+              <h3 style="margin-left: 77.7%;font-size: 0.7rem;margin-top: 3.6%;text-align: left;">
+                MODULAR
+              </h3>
+              <h6 style="font-size: 0.69rem;font-weight: lighter;margin-left: 78%;text-align: left;line-height: 1.2;">
+                For high scalability
+              </h6>
+            </div>
+            
+            <!-- Additional Inner Slides -->
+            <!-- Repeat the above structure for the remaining slides -->
+          </div>
+
+          <div class="inner-dots"></div>
+          <div class="inner-controls">
+            <button class="inner-arrow left">&lt;</button>
+            <button class="inner-arrow right">&gt;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Box 2 -->
+      <div  class="main-slider-box green-bg">
+        <h5 >SMART NETWORKING</h5>
+        <p></p>
+          CURRENT<br> TRANSFORMERS
+        </p>
+
+        <!-- Inner Slider -->
+        <!-- Repeat the inner slider structure -->
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
