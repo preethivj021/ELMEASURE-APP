@@ -761,11 +761,12 @@ body {
 }
 
 .blue-bg {
-  background-color: #004f98;
+
 }
 
 .green-bg {
   background-color: #28a745;
+  text-align: left;
 }
 
 /* Inner Slider */

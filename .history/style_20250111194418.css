@@ -762,10 +762,12 @@ body {
 
 .blue-bg {
   background-color: #004f98;
+  text-align: left;
 }
 
 .green-bg {
   background-color: #28a745;
+  text-align: left;
 }
 
 /* Inner Slider */
@@ -908,7 +910,7 @@ body {
   margin: -50% 0 0 46%;
   font-size: 15.8px;
   line-height: 1.2;
-  text-align: left;
+ 
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .box2 .horizontal-line {

@@ -734,6 +734,8 @@ body {
   }
 }
 
+
+
 .main-slider-container {
   max-width: 1230px;
   max-height: 700px;
@@ -762,10 +764,12 @@ body {
 
 .blue-bg {
   background-color: #004f98;
+  text-align: left;
 }
 
 .green-bg {
   background-color: #28a745;
+  text-align: ;
 }
 
 /* Inner Slider */
@@ -3396,7 +3400,7 @@ body {
     margin-left: 6%;
     margin-top: 2%;
     padding-bottom: 7%;
-  }
+  } 
   .button6,
   .button7 {
     padding: 2px 20px;
@@ -3584,6 +3588,8 @@ body {
 }
 /* Media Query for Small Screens */
 @media (max-width: 768px) {
+ 
+
   .footer-image {
     margin: -110% auto 20px -4%;
     display: block;
